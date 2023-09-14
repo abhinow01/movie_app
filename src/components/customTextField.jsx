@@ -24,8 +24,12 @@ function CustomTextField  ({onSearch}) {
       onKeyDown={handleKeyDown}
       style={{
         paddingLeft: 150,
-        width: '60%'
+        width: '60%',
+        color:'white'
       }}
+
+    
+
       InputProps={{
         startAdornment: (
           <InputAdornment position="start">
@@ -33,6 +37,7 @@ function CustomTextField  ({onSearch}) {
           </InputAdornment>
         ),
         sx: { borderRadius: '16px',
+            color:"white"
               } // Set the border radius here
       }}
     />

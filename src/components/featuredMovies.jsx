@@ -29,22 +29,24 @@ function FeaturedMovies() {
       }}>
         Featured Movies
       </Typography>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent:'center' }}>
         {movies.map(movie => (
           <Card key={movie.id} style={{ maxWidth: '200px',
           padding:20 }}>
             <img
               src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
               alt={movie.title}
-              style={{ width: '100%',
-            margin: 20 }}
+              style={{ width: '100%'}}
             />
             <CardContent>
-              <Typography variant="subtitle1">{movie.title}</Typography>
-              <Typography variant="body2">
+              <Typography variant="h6" style={{ fontWeight: 'bold' }}>{movie.title}</Typography>
+              <Typography variant="body2"style={{ color: '#757575', fontSize: '12px' }}>
                 Release Date: {movie.release_date}
               </Typography>
-              <Typography variant="body2">IMDb Rating: {movie.vote_average}</Typography>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                
+              <Typography variant="body2" style={{ color: '#757575', fontSize: '12px' }}>IMDb Rating: {movie.vote_average}</Typography>
+              </div>
             </CardContent>
           </Card>
         ))}

@@ -95,6 +95,7 @@ function MovieBanner({ handleDrawerOpen }) {
              marginBottom: '16px',
           }}
 
+
           onSearch={handleSearch}
         />
         </div>
