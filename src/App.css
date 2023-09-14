@@ -1,0 +1,13 @@
+.CardContent {
+    position: relative;
+  }
+  
+  /* .CustomTextField {
+    color: white;
+    & input {
+      color: white;
+    }
+  } */
+  .custom-text-field {
+    border-color: white !important; 
+  }
